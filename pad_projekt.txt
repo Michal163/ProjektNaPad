@@ -1,0 +1,7 @@
+Strona z wyborem użytkownika i potem przekierowywuje na odpowiedniego użytkownika
+Wygląd użytkownika dostosowany do wyboru i opcja dodania, usunięcia i wyszukiwania
+Dodaj - otwiera formularz z dodawaniem danego użytkownika
+Usuń - usuwa wybraną linijkę
+Szukaj - wyszukuje podaną frazę
+Zmiana użytkownika przez guzik na dole witryny
+
