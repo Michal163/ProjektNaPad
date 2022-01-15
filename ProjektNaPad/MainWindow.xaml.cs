@@ -24,5 +24,23 @@ namespace ProjektNaPad
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var Uczen = new Uczen();
+            Uczen.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var nauczyciel = new Nauczyciel();
+            nauczyciel.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var obsluga = new Obsluga();
+            obsluga.Show();
+        }
     }
 }
