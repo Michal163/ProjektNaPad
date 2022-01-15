@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:ProjektNaPad"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+        </Menu>
+        <TextBox AcceptsReturn="True" />
+        <Grid Background="WhiteSmoke">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="10px" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24px">Wybierz użytkownika:</TextBlock>
+            <Button Grid.Row="0" Grid.Column="1" Margin="10px" Click="Button_Click">Uczeń</Button>
+            <Button Grid.Row="1" Grid.Column="1" Margin="10px" Click="Button_Click_1">Nauczyciel</Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="10px" Click="Button_Click_2">Obsługa</Button>
+        </Grid>
+    </DockPanel>
 </Window>
