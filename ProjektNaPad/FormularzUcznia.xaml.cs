@@ -13,18 +13,13 @@ using System.Windows.Shapes;
 namespace ProjektNaPad
 {
     /// <summary>
-    /// Interaction logic for Obsluga.xaml
+    /// Interaction logic for FormularzUcznia.xaml
     /// </summary>
-    public partial class Obsluga : Window
+    public partial class FormularzUcznia : Window
     {
-        public Obsluga()
+        public FormularzUcznia()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
