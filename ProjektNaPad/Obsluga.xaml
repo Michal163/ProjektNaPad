@@ -6,7 +6,41 @@
         xmlns:local="clr-namespace:ProjektNaPad"
         mc:Ignorable="d"
         Title="Obsluga" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <TextBox AcceptsReturn="True" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0"  Click="Button_Click" >Dodaj</Button>
+            <Button Grid.Column="0" Grid.Row="1" >Usuń</Button>
+            <Button Grid.Column="0" Grid.Row="2" Click="Button_Click_1" >Cofnij</Button>
+
+            <DataGrid Name="wyswietlacz" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="3">
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="Imie"  Width="*"/>
+                    <DataGridTextColumn Header="Drugie Imie"  Width="*"/>
+                    <DataGridTextColumn Header="Nazwisko"  Width="*"/>
+                    <DataGridTextColumn Header="Nazwisko panieńskie" Width="*"/>
+                    <DataGridTextColumn Header="Imiiona Rodzicuw"  Width="*"/>
+                    <DataGridTemplateColumn Header="Data urodzenia">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DatePicker  BorderThickness="0" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="klasa"  Width="*"/>
+                    <DataGridTextColumn Header="grupa"  Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
 </Window>
